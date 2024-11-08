@@ -1,0 +1,265 @@
+
+.table-container {
+    width: 76%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 93vh;
+  }
+.tabl{
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-left: 0px;
+    height: 460px;
+    border: 1px solid #ccc;
+}
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Tabla de reservas */
+  .reservation-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    color: #333;
+    
+  }
+  
+  .reservation-table thead {
+    background-color: #1176db;
+    color: #fff;
+  }
+  .reservation-table thead th {
+    position: sticky; /* Fija el encabezado */
+    top: 0; /* Posiciona el encabezado en la parte superior del contenedor */
+    background-color: #43beee;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ffffff;
+    z-index: 1; /* Asegura que el encabezado esté encima del contenido */
+  }
+  /* Celdas del cuerpo de la tabla */
+.reservation-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* Estilo de filas alternas */
+  .reservation-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .reservation-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+
+  .reservation-table th, .reservation-table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .reservation-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .reservation-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .reservation-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilos de los estados */
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .status.active {
+    background-color: #27ae60;
+  }
+  .status.in-use {
+    background-color: #dbdf0e;
+  }
+  
+  .status.completed {
+    background-color: #3498db;
+  }
+  
+  .status.canceled {
+    background-color: #e74c3c;
+  }
+  
+  /* Botones de acciones */
+  .btn-details,
+  .btn-edit {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+  }
+  
+  .btn-details {
+    background-color: #065e99;
+    color: #fff;
+  }
+  
+  .btn-details:hover {
+    background-color: #0bdac8;
+  }
+  
+  .btn-edit {
+    background-color: #36e912;
+    color: #fff;
+  }
+  
+  .btn-edit:hover {
+    background-color: #e7d90b;
+  }
+  
+
+/* Formulario flotante */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+   
+}
+
+
+
+/* Formulario flotante */
+.form-container {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-in-out;
+  overflow-x: auto;
+  height: 600px;
+  
+}
+
+.form-container h2 {
+  color: #007ACC;
+  font-size: 1em;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-container label {
+  font-size: 0.6em;
+  color: #000000;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="date"],
+.form-container input[type="tel"],
+.form-container input[type="email"],
+.form-container select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bcd4e6;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #000000;
+  
+  transition: border 0.3s ease;
+  height: 10px;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="date"]:focus,
+.form-container input[type="tel"]:focus,
+.form-container input[type="email"]:focus,
+.form-container select:focus {
+  border: 1px solid #007ACC;
+  outline: none;
+}
+
+.form-container .btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007ACC;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container .btn-submit:hover {
+  background-color: #005c99;
+}
+
+/* Botón de cierre */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5em;
+  color: #007ACC;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+
+.close-btn:hover {
+  color: #005c99;
+}
+
+/* Efecto de sombreado en los inputs al hacer hover */
+.form-container input[type="text"]:hover,
+.form-container input[type="number"]:hover,
+.form-container input[type="date"]:hover,
+.form-container select:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de entrada para el formulario */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

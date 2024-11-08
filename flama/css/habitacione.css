@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.carousel-containe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Indicadores de color */
+.indicator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+  
+.indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+  
+.red { background-color: #ff4c4c; }
+  .orange { background-color: #ff9a4c; }
+  .yellow { background-color: #ffd54c; }
+  .blue { background-color: #4caeff; }
+  
+  /* Contenedor ampliado */
+.large-card {
+    flex: 1;
+    height: 500px;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+  
+.large-card h2 {
+    font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color : black;
+}
+  
+.large-card p {
+    font-size: 1rem;
+  line-height: 1.5;
+  
+  color : black;
+}
+
+.descrip{
+    width: 300px;
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+  /* Cards pequeñas */
+.small-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    background-color: #ffffff;
+}
+
+  
+.card {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/pasion2.gif'); /* Reemplaza con la URL de tu GIF */
+    background-size: cover; /* Hace que el GIF cubra toda la pantalla */
+    background-position: center; /* Centra el GIF */
+    background-repeat: no-repeat;
+}
+  
+.card.active {
+    transform: scale(1.5);
+    box-shadow: 0 0 20px rgba(207, 31, 31, 0.8), 
+    0 0 40px rgba(17, 177, 218, 0.6),
+    0 0 60px rgba(14, 221, 117, 0.4);
+    font-size: 3rem;
+    background-image: url('../images/pasion.gif'); /* Reemplaza con la URL de tu GIF */
+    background-size: cover; /* Hace que el GIF cubra toda la pantalla */
+    background-position: center; /* Centra el GIF */
+    background-repeat: no-repeat;
+    
+    
+    
+}
+  
+  /* Botones de navegación */
+.carousel-controls {
+    position:absolute ;
+    bottom: 10px;
+    right: 700px;
+    display: flex;
+    gap: 15px;
+}
+  
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 10%;
+    transition: background-color 0.3s;
+}
+  
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  

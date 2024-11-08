@@ -1,0 +1,80 @@
+.contai {
+    width: 85%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 600px;
+  }
+  
+  .heade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .heade label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .heade select {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .heade button {
+    padding: 5px 15px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .heade button:hover {
+    background-color: #1c7ed6;
+  }
+  
+  .chart-container {
+    width: 970px;
+    height: 360px;
+    border: 2px solid #000; /* Estilo del borde */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px ; /* Espaciado externo */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
+  }
+  
+  .stats {
+    column-count: 2;
+    gap: 10px;
+    width: 1000px;
+    column-gap: 50px;
+    
+    
+  }
+  
+  .stat-box {
+    flex: 1 1 48%;
+    background-color: #1599d6;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .stat-box input {
+    width: 100px;
+    text-align: right;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    background: #f9f9f9;
+  }
+  
+ 
+ 

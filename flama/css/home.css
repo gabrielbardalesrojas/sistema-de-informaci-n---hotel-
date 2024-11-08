@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    background: rgb(255, 255, 255);
+   
+}
+
+h1 {
+    color: #2e7d32;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0896ce;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 93vh;
+    transition: all .5s ease;
+   
+    
+}
+
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.sidebar a {
+    color: #000000;
+    padding: 10px 0;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    transition: background 0.3s;
+    
+}
+/* modo */
+
+
+
+.sidebar-header {
+    padding: 20px;
+    
+}
+.sidebar-header h2 {
+    margin: 0;
+    color: #fff;
+}
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar-menu li {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.sidebar-menu li i {
+    margin-right: 10px;
+}
+.sidebar-menu li.active {
+    background-color: #53030a;
+}
+.sidebar-menu ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+
+/* termina aqui*/
+.sidebar li:hover, .sidebar a.active {
+    background-color: #2ad7dd;
+    border-radius: 4px;
+    
+}
+
+
+.action-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+ .btn-add {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.btn-add {
+    background-color: #0ae715;
+    color: #fff;
+}
+
+.btn-add:hover {
+    background-color: #0edfd4;
+}
+
+
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-suspended {
+    color: rgb(216, 36, 36);
+    font-weight: bold;
+}
+
+/* Botones de acción */
+ .btn-edit {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+
+.btn-edit {
+    background-color: #06df11;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #cace09;
+}

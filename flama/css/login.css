@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(to right, #0d9bd3, #7bcefe);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contiene {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-container {
+    display: flex;
+    width: 200%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.form {
+    width: 50%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.form-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #08728d;
+    margin: 0.5rem auto 1rem;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    transition: 0.3s ease;
+    color: #888;
+    pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 0.5rem;
+    color: #076380;
+    font-size: 0.75rem;
+    background: #fff;
+    padding: 0 0.25rem;
+}
+
+.forgot-link,
+.help-link,
+.toggle-form {
+    color: #0c84bb;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn{
+    background: linear-gradient(to right, #0d9bd3, #2691cf);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.form-container.show-signup .signup-form {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.form-container.show-signup .login-form {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.form-container.show-signup {
+    transform: translateX(-50%);
+}
+
+/* Estilo para el botón de cierre (X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.close-btn:hover {
+    color: #ff0000; /* Cambia el color al pasar el cursor */
+}
+
